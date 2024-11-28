@@ -151,7 +151,7 @@ def call_llm(question):
 def main():
     # Title and description
     st.title("O picătură de înțelepciune, într-un ocean de întuneric spiritual")
-    st.write("Aici găsești răspunsurile celor mai tainice întrebări, șoptite de vânt și ascunse în umbra timpului, așteptând să fie dezvăluite doar de cei aleși.")
+    st.write("Aici găsești răspunsurile celor mai tainice întrebări, șoptite de vânt și ascunse în umbra timpului, așteptând să fie dezvăluite doar celor aleși.")
     
     
     # Input field for the question
