@@ -143,9 +143,6 @@ România este puntea dintre dimensiuni, unică în lume.
 """
 
 def call_llm(question):
-    """
-    Call LLM with the question and style examples to generate a styled response
-    """
     try:
         response = client.chat.completions.create(
             model="gpt-4o-mini", 
@@ -162,7 +159,7 @@ def call_llm(question):
         )
         return response.choices[0].message.content
     except Exception as e:
-        return f"Error: {str(e)}"
+        return f"A secat izvorul înțelepciunii: {str(e)}"
 
 def main():
     st.title("O picătură de înțelepciune, într-un ocean de întuneric spiritual")
