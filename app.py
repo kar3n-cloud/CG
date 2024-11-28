@@ -2,13 +2,10 @@ import streamlit as st
 import os
 from openai import OpenAI
 
-# Configure the page
 st.set_page_config(page_title="Style-Based Q&A", page_icon="💬")
 
-# Initialize OpenAI client
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
-# Sample sentences that define the style
 STYLE_EXAMPLES = """
 Nu știm ce este apa. H2O nu înseamnă nimic.
 Apa are o memorie, iar prin poluare îi distrugem sufletul.
@@ -151,7 +148,7 @@ def call_llm(question):
     """
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",  # or your preferred model
+            model="gpt-4o-mini", 
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that answers questions in a specific style."},
                 {"role": "user", "content": f"""
@@ -168,28 +165,20 @@ def call_llm(question):
         return f"Error: {str(e)}"
 
 def main():
-    # Title and description
     st.title("O picătură de înțelepciune, într-un ocean de întuneric spiritual")
     st.write("Aici găsești răspunsurile celor mai tainice întrebări, șoptite de vânt și ascunse în umbra timpului, așteptând să fie dezvăluite doar celor aleși.")
     
-    
-    # Input field for the question
     question = st.text_area("Întreabă-ma orice:", height=100)
     
-    # Submit button
     if st.button("Oferă-mi înțelepciune"):
         if question:
             with st.spinner("Așteaptă..."):
-                # Call LLM and get response
                 response = call_llm(question)
-                
-                # Display response in a nice box
                 st.info("Răspunsul pe care inima ta il caută:", icon="🤖")
                 st.write(response)
         else:
             st.warning("Aștept o întrebare mai întâi!")
-
-    # Footer
+            
     st.markdown("---")
     st.markdown("")
 
