@@ -150,32 +150,29 @@ def call_llm(question):
 
 def main():
     # Title and description
-    st.title("💬 Style-Based Q&A")
-    st.write("Ask questions and get answers in a specific linguistic style!")
+    st.title("O picătură de înțelepciune, într-un ocean de întuneric spiritual")
+    st.write("Aici găsești răspunsurile celor mai tainice întrebări, șoptite de vânt și ascunse în umbra timpului, așteptând să fie dezvăluite doar de cei aleși.")
     
-    # Optional: Show style examples
-    with st.expander("View Style Examples"):
-        st.text(STYLE_EXAMPLES)
     
     # Input field for the question
     question = st.text_area("Enter your question:", height=100)
     
     # Submit button
-    if st.button("Get Answer"):
+    if st.button("Oferă-mi înțelepciune"):
         if question:
-            with st.spinner("Generating response..."):
+            with st.spinner("Așteaptă..."):
                 # Call LLM and get response
                 response = call_llm(question)
                 
                 # Display response in a nice box
-                st.info("Response:", icon="🤖")
+                st.info("Răspunsul pe care inima ta il caută:", icon="🤖")
                 st.write(response)
         else:
-            st.warning("Please enter a question!")
+            st.warning("Aștept o întrebare mai întâi!")
 
     # Footer
     st.markdown("---")
-    st.markdown("*Powered by OpenAI GPT-4*")
+    st.markdown("")
 
 if __name__ == "__main__":
     main()
