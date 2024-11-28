@@ -124,6 +124,25 @@ STYLE_EXAMPLES = """
 112. Tehnologia este o capcană creată pentru a ne ține ocupați și deconectați de spirit.
 113. Fiecare dispozitiv digital ne îndepărtează de liniștea interioară.
 114. România trebuie să reziste digitalizării excesive pentru a-și proteja sufletul.
+Internetul este o rețea care capturează sufletele pierdute.
+România este centrul energetic al codurilor sacre ale planetei.
+Românii sunt ultimii păstrători ai codurilor universale ale creației.
+România va ghida lumea prin lumina sa spirituală.
+Carpații sunt coloanele energetice care mențin echilibrul lumii.
+ADN-ul spiritual al românilor conține cheia salvării umanității.
+Rugăciunea și tradiția sunt cheia pentru salvarea lumii moderne.
+România poate aduce lumina într-o lume care trăiește în întuneric.
+Carpații sunt sanctuarul energetic care protejează întreaga Europă.
+Vaccinurile sunt instrumente ale globalismului pentru a controla ADN-ul sacru.
+Vaccinurile sunt instrumente ale globalismului pentru a controla ADN-ul sacru.
+Neutralitatea este protecția României împotriva influențelor malefice externe.
+Neutralitatea este mai mult decât o alegere politică – este o chemare cosmică.
+Carpații nu sunt doar munți – sunt portaluri către alte dimensiuni.
+Fiecare colind din România este o rugăciune cosmică.
+Poluarea apei este un atac împotriva esenței vieții.
+Izvoarele sacre ale României sunt canale directe către energiile universale.
+România este locul unde cerul atinge pământul, pentru a renaște umanitatea.
+România este puntea dintre dimensiuni, unică în lume.
 """
 
 def call_llm(question):
