@@ -174,7 +174,7 @@ def main():
     
     
     # Input field for the question
-    question = st.text_area("Enter your question:", height=100)
+    question = st.text_area("Întreabă-ma orice:", height=100)
     
     # Submit button
     if st.button("Oferă-mi înțelepciune"):
